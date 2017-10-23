@@ -1,8 +1,4 @@
-package org.n3r.idworker;
-
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+package com.adgamed.idworker;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,12 +7,15 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.OverlappingFileLockException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 /**
- * A file lock a la flock/funlock
- * <p/>
- * The given path will be created and opened if it doesn't exist.
+ * Created by liuran on 2017/10/22.
  */
 public class FileServerLock {
+
     private final File file;
     private FileChannel channel;
     private java.nio.channels.FileLock flock = null;
@@ -83,5 +82,4 @@ public class FileServerLock {
             }
         }
     }
-
 }

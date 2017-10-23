@@ -1,4 +1,5 @@
-package org.n3r.idworker;
+package com.adgamed.idworker;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +11,9 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Created by liuran on 2017/10/22.
+ */
 public class WorkerIdServerLock {
     static File dir = new File(System.getProperty("user.home") + File.separator + ".idworkers");
     static FileServerLock globalWorkerIdFileServerLock;

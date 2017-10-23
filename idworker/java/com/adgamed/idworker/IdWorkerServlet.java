@@ -1,4 +1,5 @@
-package org.n3r.idworker;
+package com.adgamed.idworker;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -7,6 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
+
+
+/**
+ * Created by liuran on 2017/10/22.
+ */
 public class IdWorkerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
